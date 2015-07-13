@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "ifrslib.h"
+ifrslib();
 
 void main(){
     int var_int = leInt("Digite o númerozin: \n");
