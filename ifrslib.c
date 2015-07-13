@@ -3,7 +3,7 @@
 #define FALSE 0
 /*
  * IFRS - Osório
- * Autores : John R. / Marcelo Martins
+ * Autores : John R. / Marcelo M.
  * LIB de auxílio para leitura/escrita
  * de valores primitivos em C
  */
