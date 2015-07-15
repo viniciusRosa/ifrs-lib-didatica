@@ -49,7 +49,13 @@ int imprimeMatrizIntB(){
 
 }
 
-char *trocaChar(char *text[], char changeit, char changeto){
-
+char *trocaChar(char text[], char changeit, char changeto){
+    int i;
+    for(i=0;i<=strlen(text);i++){
+        if(text[i]==changeit){
+            text[i]=changeto;
+        }
+    }
+    return text;
 }
 
