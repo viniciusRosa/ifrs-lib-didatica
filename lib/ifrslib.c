@@ -1,19 +1,26 @@
 #include<stdio.h>
+#include<string.h>
 #define TRUE 1
 #define FALSE 0
+
 /*
  * IFRS - Osório
  * Autores : John R. / Marcelo M.
  * LIB de auxílio para leitura/escrita
  * de valores primitivos em C
  */
+
 long leInt(char msg[]) {
-    int value,ret;
+    int value, ret;
     printf("%s",msg);
-    if(ret = scanf("\n%ld",&value) == 1)
+    ret = scanf("\n%ld",&value);
+    fflush(stdin);                      //SIMILAR AO "getchar();" - LIMPAR BUFFER DE ENTRADA
+    if(ret == 1){                       //AO UTILIZAR "getchar();", A FUNÇÃO REPETIRA A CADA CARACTER
         return value;
-    else
-        return -1;
+    }else{
+        printf("Erro! Somente numeros.\n");
+        leInt(msg);
+    }
 }
 
 float leFloat(char msg[]){
@@ -30,10 +37,10 @@ char leChar(char msg[]){
     return value;
 }
 
-char leString(char msg[]){
-    char value[255];
+char *leString(char msg[]){
+    char *value[255];
     printf("%s",msg);
-    scanf("%s",&value);
-    gets(value);
-    return value;
+    getchar();
+    scanf("%254[^\n]s", value);         //PARAMETRO DO SCANF QUE IMPEDE O OVERFLOW
+    return value;                       //E TERMINA A EXECUÇÃO COM O NEWLINE
 }
