@@ -44,3 +44,13 @@ char *leString(char msg[]){
     scanf("%254[^\n]s", value);         //PARAMETRO DO SCANF QUE IMPEDE O OVERFLOW
     return value;                       //E TERMINA A EXECUÇÃO COM O NEWLINE
 }
+
+char *trocaChar(char *text[], char changeit, char changeto){
+    int i;
+    for(i=0;i<=254;i++){
+        if(text[i]==changeit){
+            text[i]=changeto;
+        }
+    }
+    return text;
+}
