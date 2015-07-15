@@ -46,6 +46,10 @@ char *leString(char msg[]){
 }
 
 int imprimeMatrizIntB(){
-	
+
+}
+
+char *trocaChar(char *text[], char changeit, char changeto){
+
 }
 
