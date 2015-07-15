@@ -1,3 +1,6 @@
+﻿#include<stdio.h>
+#include<string.h>
+#define TRUE 1
 #include<stdio.h>
 #include<string.h>
 #define TRUE 1
@@ -45,12 +48,7 @@ char *leString(char msg[]){
     return value;                       //E TERMINA A EXECUÇÃO COM O NEWLINE
 }
 
-char *trocaChar(char *text[], char changeit, char changeto){
-    int i;
-    for(i=0;i<=254;i++){
-        if(text[i]==changeit){
-            text[i]=changeto;
-        }
-    }
-    return text;
+int imprimeMatrizIntB(){
+	
 }
+
