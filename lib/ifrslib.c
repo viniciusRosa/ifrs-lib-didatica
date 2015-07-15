@@ -44,3 +44,7 @@ char *leString(char msg[]){
     scanf("%254[^\n]s", value);         //PARAMETRO DO SCANF QUE IMPEDE O OVERFLOW
     return value;                       //E TERMINA A EXECUÇÃO COM O NEWLINE
 }
+
+int imprimeMatrizIntB(){
+	
+}
