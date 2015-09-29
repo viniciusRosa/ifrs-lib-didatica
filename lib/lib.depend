@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1436970822 source:c:\users\marcelo\google drive\ads\códigos\ifrs-lib-didatica\lib\ifrslib.c
+	<stdio.h>
+	<string.h>
+
+1436966316 source:c:\users\marcelo\google drive\ads\códigos\ifrs-lib-didatica\lib\main.c
+	<stdio.h>
+	"ifrslib.h"
+
+1436965018 c:\users\marcelo\google drive\ads\códigos\ifrs-lib-didatica\lib\ifrslib.h
+
