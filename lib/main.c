@@ -2,7 +2,6 @@
 #include "ifrslib.h"
 
 void main(){
-
     // RECEBE E IMPRIME UM INTEIRO
     int var_int = lerInt("Digite um Inteiro: \n",
                          "Erro! Digite somente Inteiros:\n");
@@ -43,6 +42,6 @@ void main(){
     char textToChange[] = "THE QUICK BROWN FOX JIUMPS OVER THE LAZY DOG";
     printf("\nTexto antes: \n%s", textToChange);
     *trocaChar(textToChange, 'O', 'A');
-    printf("\nTexto depois: \n%s\n",textToChange);
+    printf("\nTexto depois: \n%s\n",textToChange);*/
 
 }
